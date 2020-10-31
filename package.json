@@ -1,5 +1,4 @@
 {
-  "homepage": "http://fteichma.github.io/attestation-covid-19-autofill",
   "name": "attestation-derogatoire-de-deplacement",
   "version": "1.0.5",
   "description": "Générateur d'attestation de déplacement dérogatoire'",
@@ -22,8 +21,7 @@
     "preserve": "npm run build",
     "serve": "serve dist",
     "serve:dist": "serve dist",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
