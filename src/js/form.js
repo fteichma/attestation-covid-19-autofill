@@ -14,12 +14,12 @@ const createTitle = () => {
 // createElement('div', { className: 'form-group' })
 
 const getCurrentTime = () => {
-  const date = new Date();
-  return date.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+  const date = new Date()
+  return date.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })
 }
 
 const getLocalStorage = (value) => {
-  return localStorage.getItem(value.toString()) ?  localStorage.getItem(value.toString()) : "";
+  return localStorage.getItem(value.toString()) ? localStorage.getItem(value.toString()) : ''
 }
 
 const createFormGroup = ({
@@ -64,32 +64,32 @@ const createFormGroup = ({
 
   const input = createElement('input', inputAttrs)
 
-  if (name === "firstname") {
-    input.value = getLocalStorage("firstname") ? getLocalStorage("firstname") : "";
+  if (name === 'firstname') {
+    input.value = getLocalStorage('firstname') ? getLocalStorage('firstname') : ''
   }
 
-  if (name === "lastname") {
-    input.value = getLocalStorage("lastname") ? getLocalStorage("lastname") : "";
+  if (name === 'lastname') {
+    input.value = getLocalStorage('lastname') ? getLocalStorage('lastname') : ''
   }
 
-  if (name === "birthday") {
-    input.value = getLocalStorage("birthday") ? getLocalStorage("birthday") : "";
+  if (name === 'birthday') {
+    input.value = getLocalStorage('birthday') ? getLocalStorage('birthday') : ''
   }
 
-  if (name === "placeofbirth") {
-    input.value = getLocalStorage("placeofbirth") ? getLocalStorage("placeofbirth") : "";
+  if (name === 'placeofbirth') {
+    input.value = getLocalStorage('placeofbirth') ? getLocalStorage('placeofbirth') : ''
   }
 
-  if (name === "address") {
-    input.value = getLocalStorage("address") ? getLocalStorage("address") : "";
+  if (name === 'address') {
+    input.value = getLocalStorage('address') ? getLocalStorage('address') : ''
   }
 
-  if (name === "city") {
-    input.value = getLocalStorage("city") ? getLocalStorage("city") : "";
+  if (name === 'city') {
+    input.value = getLocalStorage('city') ? getLocalStorage('city') : ''
   }
 
   if (name === 'zipcode') {
-    input.value = getLocalStorage("zipcode") ? getLocalStorage("zipcode") : "";
+    input.value = getLocalStorage('zipcode') ? getLocalStorage('zipcode') : ''
   }
 
   if (name === 'heuresortie') {

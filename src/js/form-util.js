@@ -61,9 +61,9 @@ export function setReleaseDateTime (releaseDateInput) {
 export function getProfile (formInputs) {
   const fields = {}
   for (const field of formInputs) {
-    let value = field.value;
-    localStorage.setItem(field.name, value);
-    console.log(field.name);
+    let value = field.value
+    localStorage.setItem(field.name, value)
+    console.log(field.name)
     if (field.id === 'field-datesortie') {
       const dateSortie = field.value.split('-')
       value = `${dateSortie[2]}/${dateSortie[1]}/${dateSortie[0]}`
